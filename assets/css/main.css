@@ -8,9 +8,11 @@ nav {
 body {
   margin: 0 auto;
   height: 100vh;
-  width: min-content;
+  width: 80vw;
   display: grid;
-  grid-template-rows: 64% minmax(26px, 26%) minmax(55px, 9%);
+  grid-template-rows: 70% minmax(26px, 30%) minmax(55px, 90px);
+  justify-content: center;
+  max-width: 1440px;
 }
 
 aside {
@@ -25,7 +27,7 @@ a {
   background-image: url(../img/your_verse_hero.jpg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
-  background-size: 100% 1315px;
+  background-size: 1440px 1315px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -65,7 +67,7 @@ footer div li {
 }
 
 .promos {
-  max-width: 100%;
+  max-width: 1440px;
   display: flex;
   justify-content: center;
 }
@@ -103,45 +105,41 @@ li:last-child {
   position: absolute;
   top: 10%;
   width: 65%;
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.2) 0,
-      rgba(0, 0, 0, 0) 5%,
-      rgba(0, 0, 0, 0) 97%,
-      rgba(0, 0, 0, 0.45) 100%
-    ),
-    linear-gradient(
-      to left,
-      rgba(0, 0, 0, 0.2) 0,
-      rgba(0, 0, 0, 0) 0.2%,
-      rgba(0, 0, 0, 0) 99.8%,
-      rgba(0, 0, 0, 0.2) 100%
-    ),
-    linear-gradient(to bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0) 97%, rgba(0, 0, 0, 0.45) 100%), linear-gradient(to left, rgba(0, 0, 0, 0.2) 0, rgba(0, 0, 0, 0) 0.2%, rgba(0, 0, 0, 0) 99.8%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(to bottom, #666 0, #5e5e5e 50%, #707070 51%, #808080 100%);
   display: inline-flex;
   justify-content: space-around;
   align-items: center;
-  justify-self: center;
   height: 36px;
-  margin: 0 auto;
   border-radius: 4px;
+  justify-self: center;
+  left: 17.5%;
 }
 
 .navbar a {
   font: 0.79em Helvetica, Arial, Verdana, sans-serif;
   color: #f5f5f5;
-  width: 30px;
+  width: 100%;
   overflow: hidden;
   border-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D") 0 2 0 1;
   border-width: 0 2px 0 1px;
   border-style: solid;
   padding: 11px 34px;
   letter-spacing: 0.02em;
+  display: flex;
+  justify-content: center;
+}
+
+nav a:nth-child(1) {
+  border: none;
+}
+
+.navbar a:hover {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAkCAQAAADifZiHAAAAJ0lEQVQIW2P4L8zE8JeJ4R8q%2Bo%2BKCIH%2FjEA1TAyMSIgJRkIQM9BYAGa0Dj%2FXpUiAAAAAAElFTkSuQmCC') repeat-x 0 0, repeat-y 0 0, rgba(0, 0, 0, 0.4);
 }
 
 .navbar svg {
   height: 28px;
-  margin-left: -69px;
+  margin-left: -46px;
 }
 
 form {
@@ -179,7 +177,7 @@ form input:hover {
 }
 
 .search-field > input:hover ~ i {
-  color: rgb(128, 126, 126); /* #707070; */
+  color: rgb(128, 126, 126);
   display: block;
 }
 
@@ -204,7 +202,12 @@ footer {
   color: #6e6e6e;
   font-size: 0.7334em;
   line-height: 1.2;
-  margin-left: 2em;
+  margin-left: 10%;
+  align-self: center;
+}
+
+footer div {
+  height: 2.5em;
 }
 
 footer div:first-child {
@@ -228,18 +231,12 @@ footer div:nth-child(2) li:last-child img {
   vertical-align: bottom;
 }
 
-nav a:nth-child(1) {
-  border: none;
+.navbar a:first-child {
+  padding: 4px 29px;
 }
 
-nav a:nth-child(5) {
-  width: 38px;
-}
-
-nav a:nth-child(7) {
-  width: 35px;
-}
-
-nav a:nth-child(8) {
-  width: 45px;
+@media (width: 1400px) {
+  body {
+    max-width: 1440px;
+  }
 }
