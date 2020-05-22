@@ -10,7 +10,7 @@ body {
   height: 100vh;
   width: 80vw;
   display: grid;
-  grid-template-rows: 70% minmax(26px, 30%) minmax(55px, 90px);
+  grid-template-rows: 65% 29% 5%;
   justify-content: center;
   max-width: 1440px;
 }
@@ -139,7 +139,7 @@ nav a:nth-child(1) {
 
 .navbar svg {
   height: 28px;
-  margin-left: -46px;
+  margin-left: -64px;
 }
 
 form {
