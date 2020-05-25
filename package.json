@@ -1,0 +1,13 @@
+{
+  "name": "AppleClone",
+  "version": "0.0.1",
+  "description": "Apple.com clone website from an old version of apple.com homes page",
+  "main": "index.html",
+  "repository": "https://github.com/abredi/apple.git",
+  "author": "Abdulaziz Ali",
+  "license": "MIT",
+  "devDependencies": {
+    "stylelint": "^13.5.0",
+    "stylelint-config-recommended": "^3.0.0"
+  }
+}
