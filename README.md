@@ -15,7 +15,7 @@ This web page is developed by HTML5 and CSS only, without using any framework or
 
 ## Live Demo
 
--  [Live Preview](https://raw.githack.com/abredi/apple/feature/homepage/index.html)
+-  [Live Preview](https://rawcdn.githack.com/abredi/apple/6147d341f92866f0102b515157473cace3428985/index.html)
 
 ## Getting Started
 
