@@ -1,6 +1,6 @@
 # Apple Clone
 
-> apple.com home page replica based on an old version of [Apple home page](https://accounts.intuit.com/index.html)
+> apple.com home page replica based on an old version (2014) of [Apple home page](https://web.archive.org/web/20140301004610/http://www.apple.com/)
 
 ![screenshot](./docs/app_screenshot.png)
 
