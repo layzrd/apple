@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 body,
 ul,
 p,
@@ -79,7 +75,7 @@ footer div li {
 }
 
 .video-link a {
-  height: 32px;
+  height: 0.7em;
 }
 
 .promos img {
@@ -163,8 +159,10 @@ form input {
   border-radius: 12px;
   background-color: #707070;
   border: none;
-  padding: 1px 18px 5px 0;
-  transition: width 1s;
+  padding: 3px 18px 3px 2em;
+  transition: width 0.3s;
+  outline: none;
+  overflow-x: hidden;
 }
 
 .search-field i {
@@ -172,10 +170,12 @@ form input {
   top: 3px;
 }
 
-form input:hover {
+form input:focus {
   width: 12em;
   border: 1px solid #ccc;
   background-color: #fff;
+  padding-right: 1.8em;
+  padding-left: 2em;
 }
 
 .search-field > .fa-search {
@@ -186,12 +186,12 @@ form input:hover {
   right: 4px;
 }
 
-.search-field > input:hover ~ i {
+.search-field > input:focus ~ i {
   color: rgb(128, 126, 126);
   display: block;
 }
 
-.search-field > input:not(:hover) ~ .fa-search {
+.search-field > input:not(:focus) ~ .fa-search {
   color: #fff;
 }
 
@@ -231,5 +231,17 @@ footer div:nth-child(2) li:last-child img {
 @media (width: 1400px) {
   body {
     max-width: 1440px;
+  }
+}
+
+@media (min-width: 901px) {
+  .video-link a {
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 491px) and (max-width: 900px) {
+  .video-link a {
+    height: 20px;
   }
 }
