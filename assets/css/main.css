@@ -163,6 +163,7 @@ form input {
   transition: width 0.3s;
   outline: none;
   overflow-x: hidden;
+  color: #fff;
 }
 
 .search-field i {
@@ -176,6 +177,7 @@ form input:focus {
   background-color: #fff;
   padding-right: 1.8em;
   padding-left: 2em;
+  color: #4f4f4f;
 }
 
 .search-field > .fa-search {
